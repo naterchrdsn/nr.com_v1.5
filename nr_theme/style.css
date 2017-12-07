@@ -1,0 +1,113 @@
+/*
+Theme Name: nr_theme
+Author: Nate Richardson
+Author URI: http://naterichardson.com
+Description: A hand-coded theme, specially made for me!
+Version: 2.1.2015
+Text Domain: nr_theme
+*/
+
+@font-face {
+    font-family: 'nilland';
+    font-style: normal;
+    src: local('default'), url(http://naterichardson.com/assets/uploads/sites/7/2014/02/Nilland.ttf);
+}
+
+@font-face {
+    font-family: 'nilland-sc';
+    font-style: normal;
+    src: local('smallcaps'), url(http://naterichardson.com/assets/uploads/sites/7/2014/02/Nilland-SmallCaps.ttf);
+}
+
+@font-face {
+    font-family: 'nilland-b';
+    font-style: normal;
+    src: url(http://richardsonmediahouse.com/assets/uploads/sites/7/2014/02/Nilland-Bold.ttf);
+}
+
+body {
+	background-image: url(http://richardsonmediahouse.com/assets/uploads/sites/7/2014/02/pattern.jpg);
+}
+
+.bold > a {
+	font-weight: bold;
+}
+
+#loaderWrap {
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 240px;
+}
+
+.side-nav.fixed a {
+	font-family: 'nilland';
+	font-size: 20px;
+	color: #171d26;
+}
+
+.table-of-contents a.active {
+	font-weight: 600;
+	border-left: 2px solid #ffdd13;
+}
+
+header, footer {
+	padding-left: 240px;
+}
+
+main {
+	padding-left: 240px;
+	opacity: 0;
+}
+
+.mobile-nav {
+	margin-bottom: -15px;
+}
+
+.mobile-nav a i {
+	color: #171d26;
+	background-color: #fff;
+	padding: 3px;
+}
+
+.logo {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#logo-container {
+	height: 100%;
+}
+
+#logo-container:hover {
+	border-left: 0px;
+}
+
+#logo-container img {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	font-family: 'nilland-b';
+	color: #171d26;
+}
+
+#leftAbout, #rightAbout, .projectsRow, #about .header {
+	opacity: 0;
+}
+
+.card-content img {
+	max-width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+	header, main, footer, #loaderWrap {
+	  padding-left: 0;
+	}
+	.mobile-nav {
+		margin-bottom: 0px;
+	}
+}
